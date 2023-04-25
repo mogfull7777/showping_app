@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const Login = () => {
 
@@ -60,6 +61,23 @@ const Login = () => {
                             Login
                         </Button>
                     </Form>
+                    <Row className={"py-3"}>
+                        <Col>
+                            <Link to={"/find/email"}>
+                                이메일 찾기
+                            </Link>
+                        </Col>
+                        <Col>
+                            <Link to={"/forgot"}>
+                                비밀번호 찾기
+                            </Link>
+                        </Col>
+                        <Col>
+                            <Link to={"/forgot"}>
+                                회원가입
+                            </Link>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>

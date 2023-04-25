@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const SignUp = () => {
 
@@ -90,10 +91,26 @@ const SignUp = () => {
                         </Form.Group>
 
 
-                        <Button variant="success" type="submit" className={"mt-3"}>
+                        <Button variant="success" type="submit" className={"mt-3 mb-3"}>
                             Submit
                         </Button>
+
+                        <Form.Text className="text-muted">
+                            가입 시, 통합 계정으로 인프랩이 제공하는 서비스를 모두 이용하실 수 있습니다.
+                        </Form.Text>
+                        <Form.Text className="text-muted">
+                            통합 계정 및 서비스 이용약관 ( 준영몰 ), 개인정보처리방침에 동의합니다.
+                        </Form.Text>
+
                     </Form>
+                    <Row className={"py-3"}>
+                        <Col>
+                            Have an Account?{" "}
+                            <Link to={"/login"}>
+                            Login
+                            </Link>
+                        </Col>
+                    </Row>
                 </Col>
 
             </Row>
