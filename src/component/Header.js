@@ -8,7 +8,7 @@ const Header = () => {
                     <Navbar.Brand href="#home">Junyoung Mall</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="ml-auto">
                             {/*<Nav.Link href="#features">Features</Nav.Link>*/}
                             {/*<Nav.Link href="#pricing">Pricing</Nav.Link>*/}
                             {/*<NavDropdown title="Dropdown" id="collasible-nav-dropdown">*/}
@@ -24,8 +24,9 @@ const Header = () => {
                             {/*</NavDropdown>*/}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Login</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
+                            <Nav.Link href={"/login"}>Login</Nav.Link>
+                            <Nav.Link eventKey={2} href={"/signup"}>
+                                {/* 생성했던 router 달아주자. */}
                                 Sign Up
                             </Nav.Link>
                         </Nav>
