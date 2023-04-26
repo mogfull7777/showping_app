@@ -24,7 +24,9 @@ const Header = () => {
                             {/*</NavDropdown>*/}
                         </Nav>
                         <Nav>
-                            <Nav.Link href={"/login"}>Login</Nav.Link>
+                            <Nav.Link href={"/login"}>
+                                Login
+                            </Nav.Link>
                             <Nav.Link eventKey={2} href={"/signup"}>
                                 {/* 생성했던 router 달아주자. */}
                                 Sign Up

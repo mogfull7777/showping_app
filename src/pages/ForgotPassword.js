@@ -12,8 +12,9 @@ const ForgotPassword = () => {
             console.log({email})
         } catch (err) {
             console.log(err)
-        }
-    }
+        };
+
+    };
 
     return (
         <Container className={"mt-5"}>
@@ -34,7 +35,6 @@ const ForgotPassword = () => {
                             </Form.Text>
 
                             <Form.Label>Email address</Form.Label>
-
 
                             <Form.Control
                                 type="email"

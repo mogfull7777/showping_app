@@ -3,6 +3,8 @@ import {Button, Card, Carousel, Container} from "react-bootstrap";
 
 const Main = () => {
 
+    // 넘어가는 배너 여러 요소를 함수화로 정리.
+
     const carouselItem = [
             {
                 "id" : "1",
